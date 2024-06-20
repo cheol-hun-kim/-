@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분당 일원학원</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            background-color: #e0e0e0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>일원학원</h1>
+        <nav>
+            <a href="#about">자기소개</a>
+            <a href="#experience">경력</a>
+            <a href="#contact">연락처</a>
+            <a href="#location">오시는길</a>
+            <a href="#reviews">수업후기</a>
+            <a href="#seminar">설명회 예약</a>
+            <a href="#booking">수업 예약</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>학원소개</h2>
+            <p>고1 당시, 국어에 올인하다시피 공부하고도 늘 60점대를 넘기지 못했던 제가 수능국어를, 수능의 관점으로 분석하여 진정한 출제원리를 깨닫고 고정 만점을 받게 되었습니다. 
+ 
+이해력, 독해력, 그리고 배경지식 등의 요소와는 수능은 전혀 무관한 시험이라는 것을 일깨워드리고, 저를 고정 만점으로 만들었던 바로 그 깨달음을 전달합니다.</p>
+        </section>
+        <section id="experience">
+            <h2>경력</h2>
+            <p>낙생고출신, 
+                연세대학교 화공생명공학부 출신, 
+                수능국어강사 since 2013~ 
+                일원학원 원장 since 2022~</p>
+        </section>
+        <section id="contact">
+            <h2>연락처</h2>
+            <p>전화번호: 010-5527-2979</p>
+            <p>이메일: onetheoryedu@gmail.com</p>
+        </section>
+        <section id="location">
+            <h2>위치정보</h2>
+            <div class="map" id="map">여기에 지도 API를 삽입하세요.</div>
+        </section>
+        <section id="reviews">
+            <h2>수업후기</h2>
+            <p>여기에 수업후기 내용을 작성하세요.</p>
+        </section>
+        <section id="seminar">
+            <h2>설명회 예약</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">전화번호</label>
+                    <input type="tel" id="phone" name="phone" required>
+             </div>
+                <div class="form-group">
+                    <label for="class">설명회 날짜선택</label>
+                    <select id="class" name="class" required>
+                        <option value="설명회1">6월 8일(토) 11시</option>
+                        <option value="설명회2">6월 29일(토) 11시</option>
+                        <option value="설명회3">7월 13일(토) 11시</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">예약하기</button>
+                </div>
+            </form>
+        </section>
+        <section id="booking">
+            <h2>수업 예약</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name-booking">이름</label>
+                    <input type="text" id="name-booking" name="name-booking" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-booking">이메일</label>
+                    <input type="email" id="email-booking" name="email-booking" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-booking">전화번호</label>
+                    <input type="tel" id="phone-booking" name="phone-booking" required>
+                </div>
+                <div class="form-group">
+                    <label for="class">수업 선택</label>
+                    <select id="class" name="class" required>
+                        <option value="수업1">6월 21일(금) 1시30 개강반</option>
+                        <option value="수업2">7월 17일(수) 6시30 개강반</option>
+                        <option value="수업3">7월 20일(토) 9시00 개강반</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">예약하기</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2022 일원학원. All rights reserved.</p>
+    </footer>
+</body>
+</html>
